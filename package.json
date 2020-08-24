@@ -1,0 +1,23 @@
+{
+	"name": "@bowriverstudio/readingtime",
+	"version": "0.0.2",
+	"description": "Medium's like reading time estimation.",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Bowriverstudio/readingtime.git"
+	},
+	"keywords": [
+		"estimated reading time",
+		"word per minute"
+	],
+	"author": "Maurice Tadros",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Bowriverstudio/readingtime/issues"
+	},
+	"homepage": "https://github.com/Bowriverstudio/readingtime#readme"
+}
