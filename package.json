@@ -1,10 +1,12 @@
 {
 	"name": "@bowriverstudio/readingtime",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Medium's like reading time estimation.",
 	"main": "dist/index.js",
 	"scripts": {
 		"build": "webpack --mode production",
+		"prepublish": "npm run build",
+		"watch": "webpack --watch",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
