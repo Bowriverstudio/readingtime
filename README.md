@@ -11,3 +11,10 @@ Or
 ```bash
 npm i @bowriverstudio/readingtime
 ```
+
+## Update to latest version
+
+```bash
+
+npm install @bowriverstudio/readingtime@latest
+```

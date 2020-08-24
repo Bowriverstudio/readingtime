@@ -1,9 +1,10 @@
 {
 	"name": "@bowriverstudio/readingtime",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Medium's like reading time estimation.",
-	"main": "src/index.js",
+	"main": "dist/index.js",
 	"scripts": {
+		"build": "webpack --mode production",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -19,5 +20,11 @@
 	"bugs": {
 		"url": "https://github.com/Bowriverstudio/readingtime/issues"
 	},
-	"homepage": "https://github.com/Bowriverstudio/readingtime#readme"
+	"homepage": "https://github.com/Bowriverstudio/readingtime#readme",
+	"devDependencies": {
+		"@babel/core": "^7.11.4",
+		"babel-loader": "^8.1.0",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12"
+	}
 }
