@@ -4,3 +4,4 @@ webpack.config.js
 sonar-project.properties
 jest.config.json
 .scannerwork/
+coverage

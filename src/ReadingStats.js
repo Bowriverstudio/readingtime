@@ -1,32 +1,3 @@
-const ansiWordBound = (c) => {
-  return " " === c || "\n" === c || "\r" === c || "\t" === c;
-};
-
-// https://repl.it/repls/CalculatingClearcutRuntimeerror
-const imageCount = (the_content) => {
-  const re = /<([img]+)(?=[\s>])(?:[^>=]|='[^']*'|="[^"]*"|=[^'"\s]*)*\s?\/?>/gi;
-  let m;
-  let hashTable = {};
-  do {
-    // conduct the match
-    m = re.exec(the_content);
-
-    // verify the match was successful
-    if (m) {
-      // verify the HashTable has an entry for the found tag name
-      if (!(m[1] in hashTable)) {
-        // no entry was found so we'll add the entry for this tag name and count it as zero
-        hashTable[m[1]] = 0;
-      } // end if
-
-      // increment the tag name counter
-      hashTable[m[1]]++;
-    } // end if
-  } while (m);
-
-  return hashTable.img;
-};
-
 export default function (text, wordsPerMinute = 200, imagesPerMinute = 5) {
   if (text == undefined) {
     return {
@@ -43,6 +14,34 @@ export default function (text, wordsPerMinute = 200, imagesPerMinute = 5) {
     end = text.length - 1,
     wordBound,
     i;
+
+  const ansiWordBound = (c) => {
+    return " " === c || "\n" === c || "\r" === c || "\t" === c;
+  };
+  // https://repl.it/repls/CalculatingClearcutRuntimeerror
+  const imageCount = (the_content) => {
+    const re = /<([img]+)(?=[\s>])(?:[^>=]|='[^']*'|="[^"]*"|=[^'"\s]*)*\s?\/?>/gi;
+    let m;
+    let hashTable = {};
+    do {
+      // conduct the match
+      m = re.exec(the_content);
+
+      // verify the match was successful
+      if (m) {
+        // verify the HashTable has an entry for the found tag name
+        if (!(m[1] in hashTable)) {
+          // no entry was found so we'll add the entry for this tag name and count it as zero
+          hashTable[m[1]] = 0;
+        } // end if
+
+        // increment the tag name counter
+        hashTable[m[1]]++;
+      } // end if
+    } while (m);
+
+    return hashTable.img;
+  };
 
   // use provided function if available
   wordBound = ansiWordBound;
@@ -62,11 +61,11 @@ export default function (text, wordsPerMinute = 200, imagesPerMinute = 5) {
   const images = imageCount(text);
 
   const minutes = words / wordsPerMinute + images / imagesPerMinute;
-  var time = minutes * 60 * 1000;
-  var displayed = Math.ceil(minutes.toFixed(2));
+  const time = minutes * 60 * 1000;
+  var displayed = Math.ceil(Number(minutes.toFixed(2)));
 
   return {
-    text: "~" + displayed + (minutes == 1 ? " min read" : " mins read"),
+    text: displayed + (minutes == 1 ? " min read" : " mins read"),
     minutes,
     time,
     words,
