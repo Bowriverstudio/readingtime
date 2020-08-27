@@ -1,6 +1,6 @@
 {
   "name": "@bowriverstudio/readingtime",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "React Component similar to Medium's reading time estimation.",
   "main": "dist/index.js",
   "scripts": {

@@ -1,5 +1,11 @@
 # @bowriverstudio/readingtime
 
+## 0.2.1
+
+### Patch Changes
+
+- Updated docs
+
 ## 0.2.0
 
 ### Minor Changes

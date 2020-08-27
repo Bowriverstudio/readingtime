@@ -4,4 +4,14 @@ This package is created to support mindbloome and is opened source. It is design
 
 ## Development Process
 
+```bash
+npx changeset
+npx changeset version
 git status .
+```
+
+## Testing
+
+```bash
+npm test
+```
