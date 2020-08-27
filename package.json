@@ -1,52 +1,52 @@
 {
-	"name": "@bowriverstudio/readingtime",
-	"version": "0.0.7",
-	"description": "React Component similar to Medium's reading time estimation.",
-	"main": "dist/index.js",
-	"scripts": {
-		"build": "webpack --mode production",
-		"prepublish": "npm run build",
-		"watch": "webpack --watch",
-		"test": "jest --collectCoverage --watchAll --config ./jest.config.json"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Bowriverstudio/readingtime.git"
-	},
-	"keywords": [
-		"estimated reading time",
-		"word per minute",
-		"React words per minute"
-	],
-	"author": "Maurice Tadros",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/Bowriverstudio/readingtime/issues"
-	},
-	"homepage": "https://github.com/Bowriverstudio/readingtime#readme",
-	"devDependencies": {
-		"@babel/core": "^7.11.4",
-		"@babel/preset-env": "^7.11.0",
-		"@babel/preset-react": "^7.10.4",
-		"babel-loader": "^8.1.0",
-		"jest": "^26.4.2",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"webpack": "^4.44.1",
-		"webpack-cli": "^3.3.12"
-	},
-	"dependencies": {
-		"@changesets/cli": "^2.9.2",
-		"eslint": "^7.5.0",
-		"eslint-import-resolver-typescript": "^2.0.0",
-		"eslint-plugin-import": "^2.22.0",
-		"eslint-plugin-jest": "^23.18.0",
-		"eslint-plugin-jsx-a11y": "^6.3.1",
-		"eslint-plugin-react": "^7.20.3",
-		"eslint-plugin-simple-import-sort": "^5.0.3",
-		"husky": "^4.2.5",
-		"lint-staged": "^10.2.11",
-		"prettier": "^2.0.5"
-	},
-	"prettier": {}
+  "name": "@bowriverstudio/readingtime",
+  "version": "0.1.0",
+  "description": "React Component similar to Medium's reading time estimation.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "prepublish": "npm run build",
+    "watch": "webpack --watch",
+    "test": "jest --collectCoverage --watchAll --config ./jest.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bowriverstudio/readingtime.git"
+  },
+  "keywords": [
+    "estimated reading time",
+    "word per minute",
+    "React words per minute"
+  ],
+  "author": "Maurice Tadros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bowriverstudio/readingtime/issues"
+  },
+  "homepage": "https://github.com/Bowriverstudio/readingtime#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "jest": "^26.4.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.9.2",
+    "eslint": "^7.5.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.18.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
+  },
+  "prettier": {}
 }
