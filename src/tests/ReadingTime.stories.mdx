@@ -6,9 +6,14 @@ import {
   Description,
   Markdown,
 } from "@storybook/addon-docs/blocks";
+import { styled } from "@storybook/theming";
 import ReadingTime from "../ReadingTime";
 import html23 from "./data/23";
 import readme from "../../README.md";
+
+export const StyledReadingTime = styled(ReadingTime)`
+  color: red;
+`;
 
 <Meta
   title="Packages/@bowriverstudio/readingtime/Samples"
@@ -51,8 +56,18 @@ import readme from "../../README.md";
   </Story>
 </Preview>
 
+## css in js
+
+<StyledReadingTime></StyledReadingTime>
+
+```js
+export const StyledReadingTime = styled(ReadingTime)`
+  color: red;
+`;
+
+// <StyledReadingTime></StyledReadingTime>
+```
+
 ## Props
 
 <ArgsTable of={ReadingTime} />
-
-<Description>{readme}</Description>

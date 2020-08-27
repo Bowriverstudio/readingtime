@@ -39,3 +39,14 @@ sonar-scanner
 ```bash
 npm install @bowriverstudio/readingtime@latest
 ```
+
+## npm link
+
+```bash
+cd PATH/packages/readingtime
+# Step 1.
+npm link
+cd ~/PATH/my-app
+# Step 2.
+npm link @bowriverstudio/readingtime
+```

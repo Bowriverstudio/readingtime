@@ -26,3 +26,27 @@ import ReadingTime from "@bowriverstudio/readingtime";
   wordsPerMinute="100"
 ></ReadingTime>
 ```
+
+```jsx
+<ReadingTime
+  theContent={post.content.rendered}
+  imagesPerMinute="1"
+></ReadingTime>
+```
+
+```js
+export const StyledReadingTime = styled(ReadingTime)`
+  color: red;
+`;
+```
+
+```jsx
+<StyledReadingTime
+  theContent={post.content.rendered}
+  imagesPerMinute="1"
+></StyledReadingTime>
+```
+
+## Demo
+
+Simple demo using Frontity and this readingtime package.

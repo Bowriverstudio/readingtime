@@ -1,5 +1,11 @@
 # @bowriverstudio/readingtime
 
+## 0.3.0
+
+### Minor Changes
+
+- Added className support
+
 ## 0.2.2
 
 ### Patch Changes

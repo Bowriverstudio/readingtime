@@ -20,10 +20,11 @@ const ReadingTime = ({
   theContent,
   wordsPerMinute = 200,
   imagesPerMinute = 5,
+  className,
 }) => {
   //   const stats = readingTime(theContent, options);
   const stats = readingStats(theContent, wordsPerMinute, imagesPerMinute);
-  return <span>{`${stats.text}`}</span>;
+  return <span className={className}>{`${stats.text}`}</span>;
 };
 
 ReadingTime.propTypes = {
@@ -41,6 +42,11 @@ ReadingTime.propTypes = {
    * Images per min viewed
    */
   imagesPerMinute: PropTypes.number,
+
+  /**
+   * Optional className for css
+   */
+  className: PropTypes.string,
 };
 
 export default ReadingTime;
