@@ -9,3 +9,20 @@ The output is a simple react component.
 ```bash
 npm i @bowriverstudio/readingtime
 ```
+
+## Sample Usage
+
+```js
+import ReadingTime from "@bowriverstudio/readingtime";
+```
+
+```jsx
+<ReadingTime theContent={post.content.rendered}></ReadingTime>
+```
+
+```jsx
+<ReadingTime
+  theContent={post.content.rendered}
+  wordsPerMinute="100"
+></ReadingTime>
+```
