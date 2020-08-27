@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReadingTime renders without crashing 1`] = `
+<div>
+  <span>
+    0 mins
+  </span>
+</div>
+`;
