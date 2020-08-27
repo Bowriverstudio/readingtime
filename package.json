@@ -1,13 +1,15 @@
 {
   "name": "@bowriverstudio/readingtime",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "React Component similar to Medium's reading time estimation.",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack --mode production",
     "prepublish": "npm run build",
     "watch": "webpack --watch",
-    "test": "jest --collectCoverage --watchAll --config ./jest.config.json"
+    "test": "jest --collectCoverage --watchAll --config ./jest.config.json",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -28,10 +30,15 @@
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
+    "@storybook/addon-actions": "^6.0.19",
+    "@storybook/addon-essentials": "^6.0.19",
+    "@storybook/addon-links": "^6.0.19",
+    "@storybook/react": "^6.0.19",
     "babel-loader": "^8.1.0",
     "jest": "^26.4.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },

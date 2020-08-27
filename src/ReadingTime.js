@@ -1,9 +1,12 @@
 /**
  * React / Frontity dependencies
  */
-import React from "react";
 import PropTypes from "prop-types";
+import React from "react";
 
+/**
+ * Internal dependencies
+ */
 import readingStats from "./ReadingStats";
 
 /**
@@ -23,12 +26,21 @@ const ReadingTime = ({
   return <span>{`${stats.text}`}</span>;
 };
 
-ReadingTime.ReadingTime = {
+ReadingTime.propTypes = {
   /**
    *  the_content of the WordPress Post.
    */
   theContent: PropTypes.string.isRequired,
-  options: PropTypes.object,
+
+  /**
+   *  Words Per Minute read
+   */
+  wordsPerMinute: PropTypes.number,
+
+  /**
+   * Images per min viewed
+   */
+  imagesPerMinute: PropTypes.number,
 };
 
 export default ReadingTime;

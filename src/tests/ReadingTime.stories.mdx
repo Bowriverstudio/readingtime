@@ -1,0 +1,51 @@
+import {
+  Meta,
+  Story,
+  Preview,
+  Props,
+  Description,
+} from "@storybook/addon-docs/blocks";
+import ReadingTime from "../ReadingTime";
+import html23 from "./data/23";
+
+<Meta title="Components|Reading Time" component={ReadingTime} />
+
+# Reading Time component
+
+<Description of={ReadingTime} />
+
+## Empty
+
+<Preview>
+  <Story name="Empty">
+    <ReadingTime />
+  </Story>
+</Preview>
+
+## Standard
+
+<Preview>
+  <Story name="Sample">
+    <ReadingTime theContent={html23.rendered} />
+  </Story>
+</Preview>
+
+## Custom Words Per Min
+
+<Preview>
+  <Story name="Sample, with custom words per min">
+    <ReadingTime theContent={html23.rendered} wordsPerMinute={20} />
+  </Story>
+</Preview>
+
+## Custom Images Per Min
+
+<Preview>
+  <Story name="Sample, with custom images">
+    <ReadingTime theContent={html23.rendered} imagesPerMinute={1} />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={ReadingTime} />
