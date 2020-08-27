@@ -1,4 +1,4 @@
-# readingtime
+# Reading Time
 
 This package calculates the estimated reading time based on Medium's algorithm. 200 words per min plus 12 seconds per image.
 
@@ -50,3 +50,10 @@ export const StyledReadingTime = styled(ReadingTime)`
 ## Demo
 
 Simple demo using Frontity and this readingtime package.
+
+https://reading-time-demo.bowriverstudio.vercel.app
+https://github.com/Bowriverstudio/reading-time-demo
+
+## Code
+
+https://github.com/Bowriverstudio/readingtime

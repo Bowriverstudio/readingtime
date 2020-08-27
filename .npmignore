@@ -3,8 +3,13 @@ src
 webpack.config.js
 sonar-project.properties
 jest.config.json
+
+.eslintrc
 .scannerwork/
+.storybook/
 .huskyrc
+.changeset/
 .lintstagedrc
 .babelrc
 coverage
+contribute.md

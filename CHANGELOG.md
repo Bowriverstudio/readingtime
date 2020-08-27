@@ -1,5 +1,17 @@
 # @bowriverstudio/readingtime
 
+## 1.0.0
+
+### Major Changes
+
+- Fixed all known issues and ready for release
+
+## 0.3.1
+
+### Patch Changes
+
+- Removed unused files from npm
+
 ## 0.3.0
 
 ### Minor Changes

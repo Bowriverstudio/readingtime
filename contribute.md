@@ -50,3 +50,9 @@ cd ~/PATH/my-app
 # Step 2.
 npm link @bowriverstudio/readingtime
 ```
+
+### Revert npm links
+
+```bash
+npm uninstall --no-save @bowriverstudio/readingtime && npm install
+```
