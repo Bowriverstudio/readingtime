@@ -4,4 +4,7 @@ webpack.config.js
 sonar-project.properties
 jest.config.json
 .scannerwork/
+.huskyrc
+.lintstagedrc
+.babelrc
 coverage
