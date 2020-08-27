@@ -20,6 +20,7 @@ export default function (text, wordsPerMinute = 200, imagesPerMinute = 5) {
   };
   // https://repl.it/repls/CalculatingClearcutRuntimeerror
   const imageCount = (the_content) => {
+    // @TODO - convert this to RE2: https://www.npmjs.com/package/re2
     const re = /<([img]+)(?=[\s>])(?:[^>=]|='[^']*'|="[^"]*"|=[^'"\s]*)*\s?\/?>/gi;
     let m;
     let hashTable = {};
@@ -62,10 +63,10 @@ export default function (text, wordsPerMinute = 200, imagesPerMinute = 5) {
 
   const minutes = words / wordsPerMinute + images / imagesPerMinute;
   const time = minutes * 60 * 1000;
-  var displayed = Math.ceil(Number(minutes.toFixed(2)));
+  const displayed = Math.ceil(Number(minutes.toFixed(2)));
 
   return {
-    text: displayed + (minutes == 1 ? " min read" : " mins read"),
+    text: displayed + " min read",
     minutes,
     time,
     words,
