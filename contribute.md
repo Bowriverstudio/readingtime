@@ -2,7 +2,7 @@
 
 This package is created to support mindbloome and is opened source. It is designed to use eslister, sonarqube, and storybook to ensure top code quality.
 
-## Development Process
+## Commits Process
 
 ```bash
 npx changeset
@@ -10,8 +10,32 @@ npx changeset version
 git status .
 ```
 
-## Testing
+```bash
+npm publish
+```
+
+## Unit Testing
 
 ```bash
 npm test
+```
+
+## Storybook Testing
+
+```bash
+npm test
+```
+
+## SonarQube
+
+Ensure Version is same as package
+
+```bash
+sonar-scanner
+```
+
+## Update to latest version
+
+```bash
+npm install @bowriverstudio/readingtime@latest
 ```

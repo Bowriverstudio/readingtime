@@ -1,19 +1,11 @@
 # readingtime
 
+This package calculates the estimated reading time based on Medium's algorithm. 200 words per min plus 12 seconds per image.
+
+The output is a simple react component.
+
 ## Installation
 
 ```bash
-yarn add @bowriverstudio/readingtime
-```
-
-Or
-
-```bash
 npm i @bowriverstudio/readingtime
-```
-
-## Update to latest version
-
-```bash
-npm install @bowriverstudio/readingtime@latest
 ```

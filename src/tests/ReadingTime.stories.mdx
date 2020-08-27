@@ -2,13 +2,18 @@ import {
   Meta,
   Story,
   Preview,
-  Props,
+  ArgsTable,
   Description,
+  Markdown,
 } from "@storybook/addon-docs/blocks";
 import ReadingTime from "../ReadingTime";
 import html23 from "./data/23";
+import readme from "../../README.md";
 
-<Meta title="Components|Reading Time" component={ReadingTime} />
+<Meta
+  title="Packages/@bowriverstudio/readingtime/Samples"
+  component={ReadingTime}
+/>
 
 # Reading Time component
 
@@ -48,4 +53,6 @@ import html23 from "./data/23";
 
 ## Props
 
-<Props of={ReadingTime} />
+<ArgsTable of={ReadingTime} />
+
+<Description>{readme}</Description>
